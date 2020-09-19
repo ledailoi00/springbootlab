@@ -12,9 +12,15 @@ public class FlightspecialController {
 	@Autowired
 	FlightspecialRepository repository;
 
-	@GetMapping("/flightspecial")
+	@GetMapping("/api")
 	List<Flightspecial> all() {
 		return repository.findAll();
+		
+	}
+	
+	@GetMapping("/")
+	String hello() {
+		return "Aws lab + Spring boot";
 		
 	}
 }

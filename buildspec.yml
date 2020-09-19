@@ -26,9 +26,10 @@ phases:
     #- 'devlounge/WEB-INF/**/*'
     #- 'devlounge/resources/**/*'
     #- 'devlounge/.ebextensions/**/*'
-rtifacts:
+artifacts:
+  type: zip
   files:
-    - target/my-app-1.0-SNAPSHOT.jar
+    - target/demolab-0.0.1-SNAPSHOT.jar
     - appspec.yml
   discard-paths: yes
     

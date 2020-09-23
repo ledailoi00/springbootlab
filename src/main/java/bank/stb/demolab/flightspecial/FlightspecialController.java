@@ -17,10 +17,4 @@ public class FlightspecialController {
 		return repository.findAll();
 		
 	}
-	
-	@GetMapping("/")
-	String hello() {
-		return "Aws lab + Spring boot";
-		
-	}
 }

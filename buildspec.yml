@@ -32,4 +32,7 @@ artifacts:
     - target/demolab-0.0.1-SNAPSHOT.jar
     - appspec.yml
   discard-paths: yes
+cache:
+  paths:
+    - '/root/.m2/**/*'
     
